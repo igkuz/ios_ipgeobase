@@ -10,5 +10,15 @@
 
 @implementation IpMetaData
 
-@synthesize city;
+@synthesize city = _city;
+
+-(id)initWithCity:(NSString *)city
+{
+    self = [super init];
+    if (self) {
+        _city = city;
+    }
+    return self;
+}
+
 @end

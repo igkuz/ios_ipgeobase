@@ -21,11 +21,11 @@ static NSString *urlString = @"http://ipgeobase.ru:7020/geo";
     NSError *error = nil;
     NSData *result = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
-    NSString *resultString = [[NSString alloc] initWithData:result encoding:NSWindowsCP1251StringEncoding];
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLData:result error:&error];
     
-    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:resultString error:&error];
+    NSString *city = [[[[xmlDictionary objectForKey:@"ip-answer"] objectForKey:@"ip"] objectForKey:@"city"] objectForKey:@"text"];
     
-    id retData = [[IpMetaData alloc] init];
+    id retData = [[IpMetaData alloc] initWithCity:city];
     return retData;
 }
 

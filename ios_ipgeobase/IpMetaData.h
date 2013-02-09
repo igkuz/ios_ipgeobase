@@ -12,4 +12,6 @@
 
 @property(readonly) NSString *city;
 
+-(id)initWithCity:(NSString *)city;
+
 @end

@@ -31,8 +31,7 @@
 {
     IpMetaData *data = [IpGeoBase lookup:ip];
     
-    STAssertEquals(data.city, @"Ульяновск", @"Incorrect city");
-    
+    STAssertTrue([data.city isEqualToString:@"Ульяновск"], @"Incorrect city");
 }
 
 - (void)test_lookup_response_object

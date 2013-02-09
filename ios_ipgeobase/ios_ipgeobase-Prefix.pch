@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ios_ipgeobase' target in the 'ios_ipgeobase' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

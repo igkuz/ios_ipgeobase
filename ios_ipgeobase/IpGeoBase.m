@@ -7,6 +7,7 @@
 //
 
 #import "IpGeoBase.h"
+#import "XMLReader.h"
 
 @implementation IpGeoBase
 
@@ -22,7 +23,7 @@ static NSString *urlString = @"http://ipgeobase.ru:7020/geo";
     
     NSString *resultString = [[NSString alloc] initWithData:result encoding:NSWindowsCP1251StringEncoding];
     
-    
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:resultString error:&error];
     
     id retData = [[IpMetaData alloc] init];
     return retData;

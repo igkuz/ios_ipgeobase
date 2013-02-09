@@ -6,8 +6,14 @@
 //  Copyright (c) 2013 ios_workshop. All rights reserved.
 //
 
-#import "ios_ipgeobase.h"
+#import "IpGeoBase.h"
 
-@implementation ios_ipgeobase
+@implementation IpGeoBase
+
++ (IpMetaData *)lookup:(NSString *)ip
+{
+    id retData = [[IpMetaData alloc] init];
+    return retData;
+}
 
 @end

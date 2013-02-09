@@ -1,13 +1,13 @@
 //
-//  ios_ipgeobase.h
+//  IpMetaData.h
 //  ios_ipgeobase
 //
-//  Created by Igor Kuznetsov on 09.02.13.
+//  Created by Antol Peshkov on 09.02.13.
 //  Copyright (c) 2013 ios_workshop. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ios_ipgeobase : NSObject
+@interface IpMetaData : NSObject
 
 @end

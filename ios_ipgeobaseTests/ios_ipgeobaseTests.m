@@ -7,14 +7,17 @@
 //
 
 #import "ios_ipgeobaseTests.h"
+#import "IpGeoBase.h"
 
-@implementation ios_ipgeobaseTests
+@implementation ios_ipgeobaseTests {
+    NSString *ip;
+}
 
 - (void)setUp
 {
     [super setUp];
     
-    // Set-up code here.
+    ip = @"46.8.114.116";
 }
 
 - (void)tearDown
@@ -24,9 +27,16 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)test_lookup_http_query
 {
-    STFail(@"Unit tests are not implemented yet in ios_ipgeobaseTests");
+    [IpGeoBase lookup:ip];
+}
+
+- (void)test_lookup_response_object
+{
+    id data = [IpGeoBase lookup:ip];
+    
+    STAssertTrue([data isKindOfClass:[IpMetaData class]], @"Wrong type");
 }
 
 @end

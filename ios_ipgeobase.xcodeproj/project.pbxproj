@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3572D21016C634DE0083A0DD /* IpMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572D20F16C634DE0083A0DD /* IpMetaData.m */; };
 		7B988B3816C62EA900FA04F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B988B3716C62EA900FA04F0 /* Foundation.framework */; };
-		7B988B3D16C62EA900FA04F0 /* ios_ipgeobase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B988B3C16C62EA900FA04F0 /* ios_ipgeobase.h */; };
-		7B988B3F16C62EA900FA04F0 /* ios_ipgeobase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B988B3E16C62EA900FA04F0 /* ios_ipgeobase.m */; };
+		7B988B3D16C62EA900FA04F0 /* IpGeoBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B988B3C16C62EA900FA04F0 /* IpGeoBase.h */; };
+		7B988B3F16C62EA900FA04F0 /* IpGeoBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B988B3E16C62EA900FA04F0 /* IpGeoBase.m */; };
 		7B988B4716C62EA900FA04F0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B988B4616C62EA900FA04F0 /* SenTestingKit.framework */; };
 		7B988B4916C62EA900FA04F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B988B4816C62EA900FA04F0 /* UIKit.framework */; };
 		7B988B4A16C62EA900FA04F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B988B3716C62EA900FA04F0 /* Foundation.framework */; };
@@ -36,18 +37,20 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				7B988B3D16C62EA900FA04F0 /* ios_ipgeobase.h in CopyFiles */,
+				7B988B3D16C62EA900FA04F0 /* IpGeoBase.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3572D20E16C634DE0083A0DD /* IpMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpMetaData.h; sourceTree = "<group>"; };
+		3572D20F16C634DE0083A0DD /* IpMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpMetaData.m; sourceTree = "<group>"; };
 		7B988B3416C62EA900FA04F0 /* libios_ipgeobase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_ipgeobase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B988B3716C62EA900FA04F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B988B3B16C62EA900FA04F0 /* ios_ipgeobase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_ipgeobase-Prefix.pch"; sourceTree = "<group>"; };
-		7B988B3C16C62EA900FA04F0 /* ios_ipgeobase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_ipgeobase.h; sourceTree = "<group>"; };
-		7B988B3E16C62EA900FA04F0 /* ios_ipgeobase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_ipgeobase.m; sourceTree = "<group>"; };
+		7B988B3C16C62EA900FA04F0 /* IpGeoBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IpGeoBase.h; sourceTree = "<group>"; };
+		7B988B3E16C62EA900FA04F0 /* IpGeoBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpGeoBase.m; sourceTree = "<group>"; };
 		7B988B4516C62EA900FA04F0 /* ios_ipgeobaseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_ipgeobaseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B988B4616C62EA900FA04F0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7B988B4816C62EA900FA04F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -113,9 +116,11 @@
 		7B988B3916C62EA900FA04F0 /* ios_ipgeobase */ = {
 			isa = PBXGroup;
 			children = (
-				7B988B3C16C62EA900FA04F0 /* ios_ipgeobase.h */,
-				7B988B3E16C62EA900FA04F0 /* ios_ipgeobase.m */,
 				7B988B3A16C62EA900FA04F0 /* Supporting Files */,
+				7B988B3C16C62EA900FA04F0 /* IpGeoBase.h */,
+				7B988B3E16C62EA900FA04F0 /* IpGeoBase.m */,
+				3572D20E16C634DE0083A0DD /* IpMetaData.h */,
+				3572D20F16C634DE0083A0DD /* IpMetaData.m */,
 			);
 			path = ios_ipgeobase;
 			sourceTree = "<group>";
@@ -247,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B988B3F16C62EA900FA04F0 /* ios_ipgeobase.m in Sources */,
+				7B988B3F16C62EA900FA04F0 /* IpGeoBase.m in Sources */,
+				3572D21016C634DE0083A0DD /* IpMetaData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +413,7 @@
 				7B988B5B16C62EA900FA04F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B988B5C16C62EA900FA04F0 /* Build configuration list for PBXNativeTarget "ios_ipgeobaseTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				7B988B5E16C62EA900FA04F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

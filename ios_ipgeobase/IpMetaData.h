@@ -10,4 +10,6 @@
 
 @interface IpMetaData : NSObject
 
+@property(readonly) NSString *city;
+
 @end

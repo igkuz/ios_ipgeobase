@@ -10,4 +10,5 @@
 
 @implementation IpMetaData
 
+@synthesize city;
 @end

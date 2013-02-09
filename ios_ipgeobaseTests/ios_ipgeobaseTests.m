@@ -29,7 +29,10 @@
 
 - (void)test_lookup_http_query
 {
-    [IpGeoBase lookup:ip];
+    IpMetaData *data = [IpGeoBase lookup:ip];
+    
+    STAssertEquals(data.city, @"Ульяновск", @"Incorrect city");
+    
 }
 
 - (void)test_lookup_response_object

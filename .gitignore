@@ -14,3 +14,4 @@ profile
 # CocoaPods
 Pods/*
 Podfile.lock
+*.xcworkspace

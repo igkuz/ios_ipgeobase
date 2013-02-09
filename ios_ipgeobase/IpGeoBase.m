@@ -10,8 +10,20 @@
 
 @implementation IpGeoBase
 
+static NSString *urlString = @"http://ipgeobase.ru:7020/geo";
+
 + (IpMetaData *)lookup:(NSString *)ip
 {
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?ip=%@", urlString, ip]]];
+    
+    NSURLResponse *response;
+    NSError *error = nil;
+    NSData *result = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    NSString *resultString = [[NSString alloc] initWithData:result encoding:NSWindowsCP1251StringEncoding];
+    
+    
+    
     id retData = [[IpMetaData alloc] init];
     return retData;
 }
